@@ -1,54 +1,34 @@
-Autocomplete for Textarea
-=========================
+**"v2.x" branch contains the code for v2 which is completely rewritten from v1. You can find the core implementation at [yuku-t/textcomplete](https://github.com/yuku-t/textcomplete). It has tests :smirk: and is independent from jQuery.**
 
-[![npm version](https://badge.fury.io/js/jquery-textcomplete.svg)](http://badge.fury.io/js/jquery-textcomplete)
-[![Bower version](https://badge.fury.io/bo/jquery-textcomplete.svg)](http://badge.fury.io/bo/jquery-textcomplete)
-[![Analytics](https://ga-beacon.appspot.com/UA-4932407-14/jquery-textcomplete/readme)](https://github.com/igrigorik/ga-beacon)
+**Please check out [master branch](https://github.com/yuku-t/jquery-textcomplete/tree/master) for stable v1 release.**
+
+#### 1.X vs. 2.X
+
+*Dependencies*
+
+   Ver.  | jQuery
+:-------:|:------:
+ **1.x** |  1.7+
+ **2.x** |   2+
+
+*Browser Support*
+
+   Ver.  | Internet Explorer | Chrome, Edge, Firefox, Opera | Safari 
+:-------:|:-----------------:|:----------------------------:|:------:
+ **1.x** |        6+         |           Current            |  5.1+
+ **2.x** |        9+         |           Current            |  5.1+
+
+
+---
+
+# jQuery.textcomplete
 
 Introduces autocompleting power to textareas, like a GitHub comment form has.
 
-![Demo](http://yuku-t.com/jquery-textcomplete/media/images/demo.gif)
+## Dependencies
 
-[Demo](http://yuku-t.com/jquery-textcomplete/).
+- jQuery (>= 2.0.0)
 
-Synopsis
---------
+## License
 
-```js
-$('textarea').textcomplete([{
-    match: /(^|\b)(\w{2,})$/,
-    search: function (term, callback) {
-        var words = ['google', 'facebook', 'github', 'microsoft', 'yahoo'];
-        callback($.map(words, function (word) {
-            return word.indexOf(term) === 0 ? word : null;
-        }));
-    },
-    replace: function (word) {
-        return word + ' ';
-    }
-}]);
-```
-
-Dependencies
-------------
-
-- jQuery (>= 1.7.0) OR Zepto (>= 1.0)
-
-Documents
----------
-
-See [doc](https://github.com/yuku-t/jquery-textcomplete/tree/master/doc) dir.
-
-License
--------
-
-Licensed under the MIT License.
-
-Credits
--------
-
-### Contributors
-
-Patches and code improvements were contributed by:
-
-https://github.com/yuku-t/jquery-textcomplete/graphs/contributors
+The MIT License
